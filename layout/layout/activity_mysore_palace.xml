@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Mysore Palace"
+        android:textColor="@color/black" />
+
+    <!-- ViewFlipper for Mysore Palace images -->
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mysore1"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mysore2"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mysore3"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mysore1"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mysore5"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mysore6"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <!-- LinearLayout with ImageButtons for Contact and Location -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/imageNumberInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Image number(1-6)"
+            android:inputType="number"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/displayImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Image"
+            android:textColor="@color/black"
+            android:backgroundTint="#4770ff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <!-- ImageButton for Contact No -->
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/abc2"
+            android:contentDescription="Contact No"
+            android:elevation="8dp"
+            android:src="@drawable/c"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter" />
+
+        <!-- ImageButton for Get Location -->
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/abc2"
+            android:contentDescription="Get Location"
+            android:elevation="8dp"
+            android:src="@drawable/loca"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+
+
+    <!-- Scrollable text content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@color/black"
+            android:gravity="start" />
+    </ScrollView>
+
+</LinearLayout>

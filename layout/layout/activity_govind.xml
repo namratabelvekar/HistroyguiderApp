@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/marsala"
+    tools:context=".Govind">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Govind sanctuary"
+        android:textColor="@color/black" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:layout_gravity="center"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/govind1"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/govind2"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/govind3"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/govind4"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/govind5"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/govind6"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+    </ViewFlipper>
+
+    <!-- Spacer TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <!-- EditText and Button for Image Number Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- EditText to Enter Image Number -->
+        <EditText
+            android:id="@+id/imageNumberInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Image Number (1-6)"
+            android:inputType="number"
+            android:padding="5dp"
+            android:layout_marginRight="10dp" />
+
+        <!-- Button to Trigger Image Display -->
+        <Button
+            android:id="@+id/displayImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Image"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/salmon"/>
+
+    </LinearLayout>
+
+    <!-- LinearLayout with ImageButtons for Contact and Location -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- ImageButton for Contact No -->
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/abc3"
+            android:contentDescription="Contact No"
+            android:elevation="8dp"
+            android:src="@drawable/cont"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter" />
+
+        <!-- ImageButton for Get Location -->
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/abc3"
+            android:contentDescription="Get Location"
+            android:elevation="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/loct" />
+    </LinearLayout>
+
+    <!-- Scrollable text content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@color/black"
+            android:gravity="start" />
+    </ScrollView>
+
+</LinearLayout>
